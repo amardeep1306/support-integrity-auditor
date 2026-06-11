@@ -126,6 +126,8 @@ print(f"  [A] NLP score dist: {df['nlp_score'].value_counts().sort_index().to_di
 rt = df['Resolution Time'].fillna(df['Resolution Time'].median())
 rt_pct = rt.rank(pct=True)
 df['rt_score'] = (1 - rt_pct) * 3 + 1   # high rt → low severity
+# Boost RT score for very fast resolution (< 6 hours) to Critical
+df.loc[df['Resolution Time'] < 6, 'rt_score'] = 4.0
 print(f"  [B] RT stats: mean={rt.mean():.1f}h, min={rt.min():.1f}h, max={rt.max():.1f}h")
 
 # Fusion  (NLP 0.60, RT 0.40)
