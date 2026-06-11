@@ -117,6 +117,7 @@ def predict(df_in: pd.DataFrame, output_dir: str = None):
     rt = df['Resolution Time'].fillna(df['Resolution Time'].median() if len(df) > 1 else 0)
     rt_pct = rt.rank(pct=True)
     df['rt_score'] = (1 - rt_pct) * 3 + 1
+    df.loc[df['Resolution Time'] < 6, 'rt_score'] = 4.0
     df['fused_score'] = W_NLP * df['nlp_score'].clip(1,4) + W_RT * df['rt_score'].clip(1,4)
     df['inferred_severity'] = df['fused_score'].apply(score_to_sev)
     df['assigned_num'] = df['Ticket Priority'].map(PRIORITY_MAP).fillna(2)
