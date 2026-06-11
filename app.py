@@ -150,7 +150,7 @@ if mode == "Single Ticket":
         st.markdown("---")
         st.markdown('<div class="section-title">Analysis Result</div>', unsafe_allow_html=True)
 
-        if is_mismatch and dossiers:
+        if is_mismatch and dossiers and result['mismatch_type'] != 'Consistent':
             d = dossiers[0]
             mtype = d['mismatch_type']
             delta = d['severity_delta']
