@@ -116,16 +116,15 @@ if mode == "Single Ticket":
     st.markdown('<div class="section-title">Ticket Details</div>', unsafe_allow_html=True)
     col1, col2 = st.columns([3, 2], gap="large")
     with col1:
-        subject     = st.text_input("Ticket Subject", "Production database completely down")
-        description = st.text_area("Ticket Description",
-            "Our entire production environment is down. All customers are affected. Immediate escalation required.",
-            height=140)
+        subject     = st.text_input("Ticket Subject", placeholder="Enter ticket subject...")
+        description = st.text_area("Ticket Description", height=140,
+            placeholder="Describe the issue in detail...")
         priority    = st.selectbox("Assigned Priority", ["Low","Medium","High","Critical"])
     with col2:
         res_time       = st.number_input("Resolution Time (hours)", min_value=0.0, value=2.0, step=0.5)
         channel        = st.selectbox("Channel", ["Email","Chat","Phone","Social media"])
         ticket_type    = st.selectbox("Ticket Type", ["Technical","Billing","Account","Feature Request","General Inquiry"])
-        customer_email = st.text_input("Customer Email", "admin@enterprise.com")
+        customer_email = st.text_input("Customer Email", placeholder="customer@company.com")
 
     st.markdown("<br>", unsafe_allow_html=True)
     analyze = st.button("Analyze Ticket", type="primary")
