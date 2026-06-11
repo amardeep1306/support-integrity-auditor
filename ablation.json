@@ -1,0 +1,10 @@
+{
+  "signal_weights": {
+    "NLP_keyword": 0.6,
+    "Resolution_time": 0.4
+  },
+  "pairwise_agreement": 0.5132,
+  "NLP_only_mismatch_rate": 0.548875,
+  "RT_only_mismatch_rate": 0.415,
+  "fused_mismatch_rate": 0.52975
+}

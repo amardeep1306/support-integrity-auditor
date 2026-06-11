@@ -1,0 +1,7 @@
+sia_env/
+__pycache__/
+*.pkl
+outputs/
+*.tar.gz
+*.pyc
+.DS_Store
