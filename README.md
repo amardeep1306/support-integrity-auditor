@@ -1,7 +1,3 @@
-
-
-https://github.com/user-attachments/assets/17fc063d-c719-4c60-8100-f08855a15a7b
-
 # Support Integrity Auditor (SIA)
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=flat-square)
@@ -9,7 +5,7 @@ https://github.com/user-attachments/assets/17fc063d-c719-4c60-8100-f08855a15a7b
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-orange?style=flat-square)
 ![Accuracy](https://img.shields.io/badge/Accuracy-98.75%25-green?style=flat-square)
 ![F1](https://img.shields.io/badge/F1_Score-0.987-green?style=flat-square)
-
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=flat-square)](https://si-auditor.streamlit.app/)
 Automatically detects priority mismatches in CRM support tickets and generates evidence-backed reports.
 
 ---
@@ -313,7 +309,8 @@ support-integrity-auditor/
 
 ---
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=flat-square)](https://si-auditor.streamlit.app/)
+https://github.com/user-attachments/assets/17fc063d-c719-4c60-8100-f08855a15a7b
+
 ## License
 
 MIT License
