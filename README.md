@@ -31,7 +31,6 @@ Two types of mismatch occur:
 - **False Alarm** — ticket is less serious than labeled (wastes resources)
 
 ---
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=flat-square)](https://si-auditor.streamlit.app/)
 ## How It Works
 
 SIA runs a 3-stage self-supervised pipeline. It requires zero pre-labeled mismatch data — it creates its own training labels from raw ticket data.
@@ -314,6 +313,7 @@ support-integrity-auditor/
 
 ---
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=flat-square)](https://si-auditor.streamlit.app/)
 ## License
 
 MIT License
